@@ -7,7 +7,7 @@ Example terraform root module to demonstrate the basic usage of the module
 Get contents of a file from a Bitbucket repository using basic authentication:
 ```hcl
 module "bitbucket_file" {
-  source  = "jksmth/bitbucket-file/http"
+  source  = "terrafoo/bitbucket-file/http"
   version = "~>1.0.0"
 
   username = "my-username"
@@ -22,7 +22,7 @@ module "bitbucket_file" {
 Get contents of a file from a Bitbucket repository using oauth authentication:
 ```hcl
 module "bitbucket_file" {
-  source  = "jksmth/bitbucket-file/http"
+  source  = "terrafoo/bitbucket-file/http"
   version = "~>1.0"
 
   client_id     = "my-client-id"
@@ -37,7 +37,7 @@ module "bitbucket_file" {
 Get contents of file from a Bitbucket repository from a specific tag:
 ```hcl
 module "bitbucket_file" {
-  source  = "jksmth/bitbucket-file/http"
+  source  = "terrafoo/bitbucket-file/http"
   version = "~>1.0"
 
   username = "my-username"
